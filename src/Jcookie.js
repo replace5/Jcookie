@@ -53,7 +53,7 @@
 	function Jc(name, domain, inter) {
 		this.domain = domain || window.domain;
 		this.name = name || this.domain.replace(/\./g, '') + 'jcookie';
-		this.inter = Number(inter) || 20;
+		this.inter = Number(inter) || 5;
 		this._timer = null;
 		this._watch_keys = {};
 	}
@@ -151,7 +151,7 @@
 		if (!this._timer) {
 			this._timer = setInterval(function() {
 				this._update();
-			}, this.inter - 1);
+			}, this.inter * 1000 - 1000);
 		}
 	}
 	/**
@@ -230,7 +230,7 @@
 	 * Jcookie构造工厂
 	 * @param  {String} cookiename [合并的cookie的存储名称]
 	 * @param  {String} domain     [cookie存储域名，若无跨域需求可不传入，默认值为当前域名]
-	 * @param  {Number} inter      [session 轮询时间, 默认为20, 单位毫秒]
+	 * @param  {Number} inter      [session 轮询时间, 默认为5, 单位为秒]
 	 * @return {Object}            [Jc对象]
 	 */
 	window["Jcookie"] = function(cookiename, domain, inter) {
