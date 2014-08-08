@@ -25,3 +25,6 @@ cookie.remove('aaa');              // 以合并的方式移除cookie或session
     更合理的session解决方案，某些浏览器的session过期时间不准确，多窗口浏览器session混乱等问题;
     Jcookie的session过期时间为5s，Jcookie只会在设置session的页面去维护session;
     当当前页面关闭时，5s后session自动过期，当然这个时间是可以调整的。
+
+
+                                                                                             ---by坚壳
