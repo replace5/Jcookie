@@ -1,9 +1,12 @@
 # Jcookie
 
-  cookie合并解决方案
-  突破cookie数量限制，在有限的空间内写入更多cookie
+	更合理的cookie存取方案
+
+	突破cookie数量限制，在有限的空间内写入更多cookie
+
 =======================
-# Demo
+
+## Demo
 
 ```javascript
 var cookie = Jcookie('testcookiename');
