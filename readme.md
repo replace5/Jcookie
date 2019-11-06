@@ -1,7 +1,7 @@
 # Jcookie
 
     cookie合并存取方案
-    突破cookie数量限制，在有限的空间内写入更多cookie
+    突破浏览器的cookie数量限制，将多个cookie合并写入到一个cookie内
 
 =======================
 
