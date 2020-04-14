@@ -19,6 +19,6 @@ cookie.remove('aaa');              // 以合并的方式移除cookie或session
 
 ##应用场景 
 
-> - Jcookie兼顾普通的存取方式，同时为了处理IE6等浏览器的cookie20个cookie的限制，采取了合并压缩的放入存入cookie；
+> - Jcookie兼顾普通的存取方式，同时为了突破老版本浏览器的对cookie个数的限制，采取了合并压缩的方式存取cookie；
 > - 在同一个域名下，用合并压缩方式存入多个cookie，只占有一个cookie位置;
-> - 更合理的session解决方案，某些浏览器的session过期时间不准确，多窗口浏览器session混乱等问题; Jcookie的session过期时间为5s，Jcookie只会在设置session的页面去维护session; 当当前页面关闭时，5s后session自动过期，当然这个时间是可以调整的。
+> - 更合理的session解决方案，某些浏览器的session过期时间不准确，多窗口浏览器session混乱等问题; Jcookie的session过期时间为5s，Jcookie只会在设置session的页面去维护session; 当前页面关闭时，5s后session自动过期，当然这个时间是可以调整的。
